@@ -3,10 +3,10 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form'
 
 export default function ModalMovie(props) {
-    console.log(6,props);
+    console.log(6, props);
     return (
         <>
-            <Modal show={props.show} onHide={props.ModalMoviehandleClose}>
+            <Modal show={props.show} onHide={props.handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>{props.chosenMovie.title}</Modal.Title>
                 </Modal.Header>
@@ -17,7 +17,7 @@ export default function ModalMovie(props) {
                             <Form.Label>Comment</Form.Label>
                             <Form.Control type="text" placeholder="Enter text" />
                             <Form.Text className="text-muted">
-                            
+
                             </Form.Text>
 
                         </Form.Group>
